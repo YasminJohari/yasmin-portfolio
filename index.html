@@ -3,149 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmin Johari | UI/UX Designer & Front-End Developer</title>
+    <title>Yasmin Johari — UI/UX Designer & Front-End Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Ambient Background Glows -->
-    <div class="glow-bg glow-1"></div>
-    <div class="glow-bg glow-2"></div>
+    <!-- Fixed Header Navigation -->
+    <header class="site-header">
+        <a href="#" class="brand-mark">YASMIN JOHARI</a>
+        <nav class="nav-menu">
+            <a href="#about">About</a>
+            <a href="#work">Selected Work</a>
+            <a href="#skills">Capabilities</a>
+            <a href="#contact" class="nav-cta">Get in Touch</a>
+        </nav>
+    </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="#" class="logo">YASMIN<span>.</span>DEV</a>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="mailto:ysminjoe@gmail.com" class="btn-glow">Let's Connect</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="badge-pill">
-                <span class="pulse-dot"></span> Available for Full-Time Roles
-            </div>
-            <h1>Designing Digital Experiences That <span class="gradient-text">Inspire & Perform.</span></h1>
-            <p>Computer Science (Graphics & Multimedia) graduate specializing in UI/UX Prototyping, Flutter development, and responsive WordPress design.</p>
-            
-            <div class="hero-actions">
-                <a href="#projects" class="btn-primary">Explore Portfolio <i class="fas fa-arrow-right"></i></a>
-                <a href="https://www.linkedin.com/in/yasmin-johari-242323257/" target="_blank" class="btn-secondary">LinkedIn Profile</a>
+    <!-- Hero / Intro Section -->
+    <section id="about" class="hero-section">
+        <div class="hero-container">
+            <span class="hero-eyebrow">Graphics & Multimedia Specialist</span>
+            <h1 class="hero-title">Crafting human-centered digital interfaces with artistic intent & functional engineering.</h1>
+            <p class="hero-bio">
+                Computer Science graduate (CGPA: 3.77) from Universiti Teknologi Malaysia[cite: 1]. Blending visual storytelling, responsive front-end code, and system-level UI prototyping across Flutter, Laravel, and WordPress[cite: 1, 2].
+            </p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Location</span>
+                    <span class="meta-value">Selangor, Malaysia</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Specialities</span>
+                    <span class="meta-value">UI/UX Design, Flutter, WordPress</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Status</span>
+                    <span class="meta-value status-active">Available for Roles</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Projects Showcase Section -->
-    <section id="projects" class="projects-section">
-        <div class="section-header">
-            <span class="sub-title">PORTFOLIO</span>
-            <h2>Featured Projects & Case Studies</h2>
+    <!-- Selected Projects Section -->
+    <section id="work" class="work-section">
+        <div class="section-intro">
+            <span class="section-num">01</span>
+            <h2>Selected Engineering & UI/UX Work</h2>
         </div>
 
-        <div class="projects-grid">
-            
-            <!-- Project Card 1 -->
-            <div class="project-card glass-card">
-                <div class="card-image-wrapper">
-                    <img src="images/icadang.jpg" alt="i-Cadang Mobile App">
-                    <div class="card-overlay">
-                        <span class="overlay-tag">Full-Stack Mobile App</span>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="tech-stack-pills">
-                        <span>Flutter</span>
-                        <span>Laravel 12</span>
-                        <span>Figma</span>
-                    </div>
-                    <h3>i-Cadang Mobile Application</h3>
-                    <p>Designed and built an internal mobile suggestion app end-to-end featuring smooth user onboarding, custom design tokens, and real-time backend API integration.</p>
-                </div>
-            </div>
+        <div class="work-list">
 
-            <!-- Project Card 2 -->
-            <div class="project-card glass-card">
-                <div class="card-image-wrapper">
-                    <img src="images/kpk-portal.jpg" alt="KPK Government Portal">
-                    <div class="card-overlay">
-                        <span class="overlay-tag">Portal & Web UI</span>
-                    </div>
+            <!-- Project 1 -->
+            <article class="work-card">
+                <div class="work-media">
+                    <img src="images/icadang.jpg" alt="i-Cadang Mobile Interface">
                 </div>
-                <div class="card-content">
-                    <div class="tech-stack-pills">
-                        <span>WordPress</span>
-                        <span>UI/UX Prototyping</span>
-                        <span>CSS3</span>
+                <div class="work-details">
+                    <div class="work-header">
+                        <span class="work-category">Mobile Engineering / UI UX</span>
+                        <h3>i-Cadang Enterprise Mobile Application</h3>
                     </div>
-                    <h3>KPK Government & Corporate Portal</h3>
-                    <p>Designed visually modern layouts, responsive tab sections, and data statistics visualization for high-visibility government web portals.</p>
+                    <p class="work-description">
+                        Full-stack internal mobile application developed end-to-end during my software engineering internship at Favotech System[cite: 2]. Engineered using Flutter for responsive UI design and Laravel 12 for backend API synchronization[cite: 2].
+                    </p>
+                    <ul class="tag-list">
+                        <li>Flutter</li>
+                        <li>Laravel 12</li>
+                        <li>Figma</li>
+                        <li>REST APIs</li>
+                    </ul>
                 </div>
-            </div>
+            </article>
 
-            <!-- Project Card 3 -->
-            <div class="project-card glass-card">
-                <div class="card-image-wrapper">
-                    <img src="images/lab-attendance.jpg" alt="Lab Attendance System">
-                    <div class="card-overlay">
-                        <span class="overlay-tag">Mobile UI & Location API</span>
-                    </div>
+            <!-- Project 2 -->
+            <article class="work-card">
+                <div class="work-media">
+                    <img src="images/kpk-portal.jpg" alt="KPK Government Web Portal">
                 </div>
-                <div class="card-content">
-                    <div class="tech-stack-pills">
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>Geolocation</span>
+                <div class="work-details">
+                    <div class="work-header">
+                        <span class="work-category">Portal Customization & Web UI</span>
+                        <h3>KPK Government Portal & Corporate Web Design</h3>
                     </div>
-                    <h3>Lab Attendance & Appointment Mobile App</h3>
-                    <p>Created an intuitive mobile user experience integrated with real-time location tracking for automated attendance validation and scheduling.</p>
+                    <p class="work-description">
+                        Structured user flows, responsive navigation architectures, and data statistics visualization modules for enterprise-level web portals[cite: 2].
+                    </p>
+                    <ul class="tag-list">
+                        <li>WordPress CMS</li>
+                        <li>UI Prototyping</li>
+                        <li>HTML/CSS</li>
+                    </ul>
                 </div>
-            </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="work-card">
+                <div class="work-media">
+                    <img src="images/lab-attendance.jpg" alt="Lab Attendance Tracking System">
+                </div>
+                <div class="work-details">
+                    <div class="work-header">
+                        <span class="work-category">Academic Project / Mobile UI</span>
+                        <h3>Lab Attendance & Appointment System</h3>
+                    </div>
+                    <p class="work-description">
+                        Cross-platform mobile application integrating real-time geolocation services for automated student lab attendance logging and appointment tracking[cite: 1].
+                    </p>
+                    <ul class="tag-list">
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Geolocation Services</li>
+                    </ul>
+                </div>
+            </article>
 
         </div>
     </section>
 
-    <!-- Skills & Expertise Section -->
+    <!-- Capabilities / Skill Architecture -->
     <section id="skills" class="skills-section">
-        <div class="section-header">
-            <span class="sub-title">EXPERTISE</span>
-            <h2>Design & Technical Toolkit</h2>
+        <div class="section-intro">
+            <span class="section-num">02</span>
+            <h2>Capabilities & Tooling</h2>
         </div>
 
-        <div class="skills-grid">
-            <div class="skill-card glass-card">
-                <div class="skill-icon">🎨</div>
-                <h3>UI/UX & Visual Design</h3>
-                <p>Figma Prototyping, Wireframing, Responsive Layouts, User Flow Architecture, Visual Storytelling, Adobe Photoshop & Illustrator, Canva</p>
+        <div class="capabilities-grid">
+            <div class="capability-column">
+                <h3>UI/UX & Design Architecture</h3>
+                <p>Wireframing, High-Fidelity Design Tokens, Figma Prototyping, User Flow Diagramming, Adobe Photoshop, Adobe Illustrator, Visual Layout Composition[cite: 1, 2].</p>
             </div>
-
-            <div class="skill-card glass-card">
-                <div class="skill-icon">💻</div>
-                <h3>Front-End Development</h3>
-                <p>HTML5, CSS3, JavaScript, Flutter, Dart, WordPress CMS Customization, AJAX, Responsive Web Design</p>
+            <div class="capability-column">
+                <h3>Front-End Engineering</h3>
+                <p>HTML5, Modern CSS3, JavaScript, Flutter Cross-Platform Development, Dart, WordPress CMS Architecture, AJAX, Responsive Layouts[cite: 1, 2].</p>
             </div>
-
-            <div class="skill-card glass-card">
-                <div class="skill-icon">⚡</div>
+            <div class="capability-column">
                 <h3>Back-End & Quality Assurance</h3>
-                <p>Laravel, MySQL, PHP, User Acceptance Testing (UAT), System Testing, Technical Documentation</p>
+                <p>Laravel Framework, MySQL Database Management, PHP, System Testing, User Acceptance Testing (UAT), System Documentation[cite: 1, 2].</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-glass glass-card">
-            <h2>Ready to build impactful digital experiences together?</h2>
-            <p>I am open for immediate opportunities in Front-End Development, UI/UX Design, and WordPress Design.</p>
-            <a href="mailto:ysminjoe@gmail.com" class="btn-primary btn-large">Get In Touch</a>
-            <div class="footer-bottom">
-                <span>© 2026 Yasmin Binti Johari. All rights reserved.</span>
+    <!-- Footer / Contact -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <h2>Let's build something intentional together.</h2>
+                <a href="mailto:ysminjoe@gmail.com" class="email-link">ysminjoe@gmail.com</a>
+            </div>
+            <div class="footer-sub">
+                <span>Klang, Selangor, Malaysia</span>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/yasmin-johari-242323257/" target="_blank">LinkedIn</a>
+                </div>
             </div>
         </div>
     </footer>
