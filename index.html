@@ -1,138 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasmin Johari — UI/UX & Front-End Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<div class="asymmetric-grid">
 
-    <!-- Custom Cursor Follower -->
-    <div class="custom-cursor"></div>
-
-    <!-- Navigation Header -->
-    <header class="navbar">
-        <a href="#about" class="brand">YASMIN_JOHARI<span>.SYS</span></a>
-        <nav class="nav-links">
-            <a href="#about">01 // ABOUT</a>
-            <a href="#work">02 // WORK</a>
-            <a href="#capabilities">03 // STACK</a>
-            <a href="mailto:ysminjoe@gmail.com" class="cta-btn">LET'S TALK</a>
-        </nav>
-    </header>
-
-    <!-- Hero / Main Showcase Section -->
-    <section id="about" class="hero">
-        <div class="hero-container">
-            <div class="status-pill">
-                <span class="pulse"></span> 2026 CS GRADUATE @ UTM[cite: 1]
-            </div>
-            <h1 class="hero-title">ENGINEERING <span class="highlight-blue">INTUITIVE</span> UI/UX & <span class="highlight-orange">FLUTTER</span> APPS.</h1>
-            <p class="hero-sub">
-                Graphics & Multimedia Computer Science Graduate (CGPA 3.77) bridging high-fidelity prototyping, front-end architecture, and custom mobile apps[cite: 1, 2].
-            </p>
-            <div class="hero-cta-group">
-                <a href="#work" class="brutalist-btn btn-orange">EXPLORE WORK ↓</a>
-                <a href="https://www.linkedin.com/in/yasmin-johari-242323257/" target="_blank" class="brutalist-btn btn-white">LINKEDIN ↗</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Asymmetrical Interactive Work Showcase -->
-    <section id="work" class="work-section">
-        <div class="section-tag">
-            <span>[ SELECTED_WORKS ]</span>
-        </div>
-
-        <div class="asymmetric-grid">
-
-            <!-- Card 1: Interactive Hover Preview -->
+            <!-- Card 1: Full-Stack Mobile App -->
             <article class="project-card card-large">
                 <div class="card-media">
-                    <img src="images/icadang.jpg" alt="i-Cadang Mobile Interface" class="static-img">
-                    <div class="media-badge">HOVER TO PREVIEW</div>
+                    <img src="images/icadang.png" alt="i-Cadang Mobile Application">
+                    <div class="media-badge">INTERNSHIP PROJECT</div>
                 </div>
                 <div class="card-body">
                     <div class="card-meta">
                         <span class="tag tag-blue">FLUTTER</span>
-                        <span class="tag tag-yellow">LARAVEL 12</span>
+                        <span class="tag tag-yellow">LARAVEL</span>
                     </div>
-                    <h2>i-Cadang Mobile App</h2>
-                    <p>Designed and built an enterprise mobile suggestion platform end-to-end with dynamic API integration and high-fidelity Flutter components during my internship at Favotech System[cite: 2].</p>
+                    <h2>i-Cadang Enterprise Mobile App</h2>
+                    <p>Developed an internal mobile application end-to-end during my industrial training at Favotech System, engineering the front-end using Flutter and integrating back-end services using Laravel[cite: 3].</p>
                 </div>
             </article>
 
-            <!-- Card 2: Broken Grid Shift -->
+            <!-- Card 2: WordPress Portal & Prototyping -->
             <article class="project-card card-small offset-down">
                 <div class="card-media">
-                    <img src="images/kpk-portal.jpg" alt="KPK Government Portal" class="static-img">
+                    <img src="images/kpk-portal.png" alt="KPK Government Portal">
+                    <div class="media-badge">INTERNSHIP PROJECT</div>
                 </div>
                 <div class="card-body">
                     <div class="card-meta">
                         <span class="tag tag-orange">WORDPRESS</span>
-                        <span class="tag">UI/UX</span>
+                        <span class="tag">FIGMA</span>
                     </div>
-                    <h2>KPK Government Web Portal</h2>
-                    <p>Customized enterprise homepage architectures, responsive data modules, and user flows for high-visibility portals[cite: 2].</p>
+                    <h2>KPK Government Portal & Web Prototyping</h2>
+                    <p>Designed and maintained web layouts, custom posts, homepage statistics, and navigation modules using WordPress[cite: 3]. Wireframed and prototyped user interfaces in Figma for the Skuad Antidadah app and iPersonel system[cite: 3].</p>
                 </div>
             </article>
 
-            <!-- Card 3 -->
+            <!-- Card 3: Mobile Car Rental Service (IMAGE AVAILABLE) -->
             <article class="project-card card-small">
                 <div class="card-media">
-                    <img src="images/lab-attendance.jpg" alt="Lab Attendance System" class="static-img">
+                    <img src="images/car-rental.png" alt="Car Rental Service Mobile App">
+                    <div class="media-badge">UTM PROJECT</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="tag tag-blue">FLUTTER</span>
+                        <span class="tag tag-yellow">DART</span>
+                    </div>
+                    <h2>Mobile App for Car Rental Service</h2>
+                    <p>Created a mobile application using Flutter and Dart tailored for a car rental service company exclusively for student users, focusing on car reservations and rental management[cite: 3].</p>
+                </div>
+            </article>
+
+            <!-- Card 4: Mobile Attendance System (NO IMAGE) -->
+            <article class="project-card card-small offset-down">
+                <div class="card-media">
+                    <div class="card-media-placeholder">GEOLOCATION APP</div>
+                    <div class="media-badge">UTM PROJECT</div>
                 </div>
                 <div class="card-body">
                     <div class="card-meta">
                         <span class="tag tag-yellow">GEOLOCATION</span>
                         <span class="tag tag-blue">DART</span>
                     </div>
-                    <h2>Lab Attendance System</h2>
-                    <p>Cross-platform mobile application utilizing geolocation tracking for real-time attendance marking and scheduling[cite: 1].</p>
+                    <h2>Lab Attendance & Appointment System</h2>
+                    <p>Developed a mobile application using Flutter and Dart that integrates geolocation to accurately track users' current location for reliable attendance marking and lab appointment scheduling[cite: 3].</p>
+                </div>
+            </article>
+
+            <!-- Card 5: Web-Based Leave System -->
+            <article class="project-card card-large">
+                <div class="card-media">
+                    <div class="card-media-placeholder">WEB SYSTEM</div>
+                    <div class="media-badge">UTM PROJECT</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="tag tag-orange">HTML/CSS</span>
+                        <span class="tag tag-blue">MYSQL</span>
+                    </div>
+                    <h2>Web-Based Leave Application System</h2>
+                    <p>Developed a web application integrated with a MySQL database to manage leave applications and approvals, utilizing HTML for front-end design to ensure efficient system operations[cite: 3].</p>
                 </div>
             </article>
 
         </div>
-    </section>
-
-    <!-- Capabilities / Tech Stack Architecture -->
-    <section id="capabilities" class="stack-section">
-        <div class="section-tag">
-            <span>[ CAPABILITIES & TOOLING ]</span>
-        </div>
-
-        <div class="stack-container">
-            <div class="stack-box">
-                <h3>01 / UI UX DESIGN</h3>
-                <p>Figma Prototyping, Wireframing, User Journey Maps, Visual Design Tokens, Adobe Photoshop, Illustrator, Canva[cite: 1, 2].</p>
-            </div>
-            <div class="stack-box highlight-box">
-                <h3>02 / FRONT-END</h3>
-                <p>HTML5, Modern CSS3, JavaScript, Flutter, Dart, WordPress CMS Customization, Responsive Web Design[cite: 1, 2].</p>
-            </div>
-            <div class="stack-box">
-                <h3>03 / BACK-END & QA</h3>
-                <p>Laravel Framework, MySQL, PHP, System Testing, User Acceptance Testing (UAT), System Documentation[cite: 1, 2].</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Footer -->
-    <footer id="contact" class="footer">
-        <div class="footer-content">
-            <h2>LET'S BUILD SOMETHING BOLD.</h2>
-            <a href="mailto:ysminjoe@gmail.com" class="email-btn">ysminjoe@gmail.com ↗</a>
-            <div class="footer-bottom">
-                <span>© 2026 YASMIN JOHARI. ALL RIGHTS RESERVED.</span>
-                <span>KLANG, SELANGOR, MY</span>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>

@@ -128,12 +128,12 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4.8rem);
+    font-size: clamp(2.2rem, 5.5vw, 4.2rem);
     font-weight: 800;
     line-height: 1.05;
     letter-spacing: -2px;
     margin-bottom: 24px;
-    max-width: 1000px;
+    max-width: 1050px;
 }
 
 .highlight-blue {
@@ -149,10 +149,11 @@ body {
 }
 
 .hero-sub {
-    font-size: 1.25rem;
-    max-width: 750px;
+    font-size: 1.15rem;
+    max-width: 850px;
     margin-bottom: 40px;
     font-weight: 500;
+    line-height: 1.6;
 }
 
 .hero-cta-group {
@@ -180,7 +181,7 @@ body {
     box-shadow: 8px 8px 0px var(--border-black);
 }
 
-/* Broken/Asymmetrical Grid */
+/* Asymmetrical Grid */
 .work-section, .stack-section {
     padding: 80px 5%;
     border-bottom: 3px solid var(--border-black);
@@ -218,7 +219,7 @@ body {
 .card-media {
     position: relative;
     border-bottom: 3px solid var(--border-black);
-    height: 280px;
+    height: 240px;
     overflow: hidden;
     background: var(--accent-yellow);
 }
@@ -227,11 +228,18 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
 }
 
-.project-card:hover .card-media img {
-    transform: scale(1.05);
+.card-media-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--border-black);
+    background: var(--bg-cream);
 }
 
 .media-badge {
@@ -267,14 +275,19 @@ body {
 .tag-yellow { background: var(--accent-yellow); }
 
 .card-body h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 12px;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #333;
 }
 
 /* Capabilities Stack */
 .stack-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
 }
 
@@ -291,8 +304,12 @@ body {
 
 .stack-box h3 {
     font-family: var(--font-mono);
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 12px;
+}
+
+.stack-box p {
+    font-size: 0.9rem;
 }
 
 /* Footer */
@@ -303,7 +320,7 @@ body {
 }
 
 .footer-content h2 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
     margin-bottom: 20px;
     color: #fff;
 }
@@ -311,7 +328,7 @@ body {
 .email-btn {
     display: inline-block;
     font-family: var(--font-mono);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--border-black);
     background: var(--accent-yellow);
