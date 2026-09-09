@@ -1,9 +1,59 @@
-<div class="asymmetric-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmin Johari — Front-End Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Custom Interactive Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <a href="#about" class="brand">YASMIN_JOHARI<span>.SYS</span></a>
+        <nav class="nav-links">
+            <a href="#about">01 // ABOUT</a>
+            <a href="#work">02 // WORK</a>
+            <a href="#capabilities">03 // SKILLS</a>
+            <a href="mailto:ysminjoe@gmail.com" class="cta-btn">LET'S TALK</a>
+        </nav>
+    </header>
+
+    <!-- Hero / Main Showcase Section -->
+    <section id="about" class="hero">
+        <div class="hero-container">
+            <div class="status-pill">
+                <span class="pulse"></span> CS GRADUATE @ UTM (CGPA 3.82)
+            </div>
+            <h1 class="hero-title">BRIDGING <span class="highlight-blue">CREATIVE VISUAL DESIGN</span> & <span class="highlight-orange">FRONT-END</span> ENGINEERING.</h1>
+            <p class="hero-sub">
+                Inspired by the visual storytelling and craft of Studio Ghibli and Walt Disney Animation Studios, my passion for digital artwork naturally evolved into crafting intuitive, human-centered digital experiences. As a Computer Science graduate specializing in Graphics & Multimedia Software from Universiti Teknologi Malaysia, I combine an eye for aesthetic detail with clean, functional code[cite: 3].
+            </p>
+            <div class="hero-cta-group">
+                <a href="#work" class="brutalist-btn btn-orange">EXPLORE WORK ↓</a>
+                <a href="https://www.linkedin.com/in/yasmin-johari-242323257/" target="_blank" class="brutalist-btn btn-white">LINKEDIN ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asymmetrical Interactive Work Showcase -->
+    <section id="work" class="work-section">
+        <div class="section-tag">
+            <span>[ KEY_PROJECTS & EXPERIENCE ]</span>
+        </div>
+
+        <div class="asymmetric-grid">
 
             <!-- Card 1: Full-Stack Mobile App -->
             <article class="project-card card-large">
                 <div class="card-media">
-                    <img src="images/icadang.png" alt="i-Cadang Mobile Application">
+                    <img src="images/icadang.jpg" alt="i-Cadang Mobile Application">
                     <div class="media-badge">INTERNSHIP PROJECT</div>
                 </div>
                 <div class="card-body">
@@ -19,7 +69,7 @@
             <!-- Card 2: WordPress Portal & Prototyping -->
             <article class="project-card card-small offset-down">
                 <div class="card-media">
-                    <img src="images/kpk-portal.png" alt="KPK Government Portal">
+                    <img src="images/kpk-portal.jpg" alt="KPK Government Portal">
                     <div class="media-badge">INTERNSHIP PROJECT</div>
                 </div>
                 <div class="card-body">
@@ -35,7 +85,7 @@
             <!-- Card 3: Mobile Car Rental Service (IMAGE AVAILABLE) -->
             <article class="project-card card-small">
                 <div class="card-media">
-                    <img src="images/car-rental.png" alt="Car Rental Service Mobile App">
+                    <img src="images/lab-attendance.jpg" alt="Car Rental Service Mobile App">
                     <div class="media-badge">UTM PROJECT</div>
                 </div>
                 <div class="card-body">
@@ -81,3 +131,46 @@
             </article>
 
         </div>
+    </section>
+
+    <!-- Capabilities / Tech Stack Architecture -->
+    <section id="capabilities" class="stack-section">
+        <div class="section-tag">
+            <span>[ CORE_SKILLS & TOOLING ]</span>
+        </div>
+
+        <div class="stack-container">
+            <div class="stack-box">
+                <h3>01 / UI UX DESIGN</h3>
+                <p>Figma, User Flow Architecture, Wireframing, UI Prototyping, Responsive Design, Canva[cite: 3].</p>
+            </div>
+            <div class="stack-box highlight-box">
+                <h3>02 / FRONT-END & WEB</h3>
+                <p>HTML, CSS, JavaScript, Flutter, Dart, WordPress CMS, AJAX[cite: 3].</p>
+            </div>
+            <div class="stack-box">
+                <h3>03 / BACK-END & DB</h3>
+                <p>Laravel, MySQL, SQL, PHP[cite: 3].</p>
+            </div>
+            <div class="stack-box">
+                <h3>04 / SOFTWARE, QA & TOOLS</h3>
+                <p>User Acceptance Testing (UAT), System Testing, Git, VS Code, Power BI[cite: 3].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h2>DELIVERING RESPONSIVE & VISUALLY ENGAGING INTERFACES.</h2>
+            <a href="mailto:ysminjoe@gmail.com" class="email-btn">ysminjoe@gmail.com ↗</a>
+            <div class="footer-bottom">
+                <span>© YASMIN BINTI JOHARI. ALL RIGHTS RESERVED.</span>
+                <span>KLANG, SELANGOR, 42200[cite: 3]</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
