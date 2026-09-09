@@ -7,169 +7,165 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Custom Interactive Cursor -->
-    <div class="custom-cursor"></div>
-
     <!-- Navigation Header -->
     <header class="navbar">
-        <a href="#about" class="brand">YASMIN_JOHARI</a>
+        <a href="#hero" class="brand">Yasmin Johari</a>
         <nav class="nav-links">
-            <a href="#about">01 // ABOUT</a>
-            <a href="#work">02 // WORK</a>
-            <a href="#capabilities">03 // SKILLS</a>
-            <a href="mailto:ysminjoe@gmail.com" class="cta-btn">LET'S CONNECT</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="mailto:ysminjoe@gmail.com" class="cta-btn">Get in touch ↗</a>
         </nav>
     </header>
 
-    <!-- Hero / Main Showcase Section -->
-    <section id="about" class="hero">
-        <div class="hero-container">
-            <div class="status-pill">
-                <span class="pulse"></span> CS GRADUATE @ UTM (CGPA 3.82)
-            </div>
-            <h1 class="hero-title">BRIDGING <span class="highlight-blue">CREATIVE VISUAL DESIGN</span> & <span class="highlight-orange">FRONT-END</span> ENGINEERING.</h1>
-            <p class="hero-sub">
-                Inspired by the visual storytelling and craft of Studio Ghibli and Walt Disney Animation Studios, my passion for digital artwork naturally evolved into crafting intuitive, human-centered digital experiences. As a Computer Science graduate specializing in Graphics & Multimedia Software from Universiti Teknologi Malaysia, I combine an eye for aesthetic detail with clean, functional code.
-            </p>
-            <div class="hero-cta-group">
-                <a href="#work" class="brutalist-btn btn-orange">EXPLORE WORK ↓</a>
-                <a href="https://www.linkedin.com/in/yasmin-johari-242323257/" target="_blank" class="brutalist-btn btn-white">LINKEDIN ↗</a>
-            </div>
-        </div>
-    </section>
+    <main class="container">
 
-    <!-- Asymmetrical Interactive Work Showcase -->
-    <section id="work" class="work-section">
-        <div class="section-tag">
-            <span>[ KEY_PROJECTS & EXPERIENCE ]</span>
-        </div>
+        <!-- Bento Grid Container -->
+        <div class="bento-grid">
 
-        <div class="asymmetric-grid">
-
-            <!-- Card 1: Full-Stack Mobile App -->
-            <article class="project-card card-large">
-                <div class="card-media">
-                    <img src="images/icadang.png" alt="i-Cadang Mobile Application">
-                    <div class="media-badge">INTERNSHIP PROJECT</div>
+            <!-- Hero Bento Box (Large) -->
+            <section id="about" class="bento-box hero-box">
+                <div class="status-pill">
+                    <span class="pulse"></span> CS Graduate @ UTM (CGPA 3.82)
                 </div>
-                <div class="card-body">
-                    <div class="card-meta">
-                        <span class="tag tag-blue">FLUTTER</span>
-                        <span class="tag tag-yellow">LARAVEL</span>
+                <h1 class="hero-title">Bridging creative visual design & front-end software engineering.</h1>
+                <p class="hero-sub">
+                    Inspired by the visual storytelling and craft of Studio Ghibli and Walt Disney Animation Studios, my passion for digital artwork naturally evolved into crafting intuitive, human-centered digital experiences. I combine an eye for aesthetic detail with clean, functional code.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="mailto:ysminjoe@gmail.com" class="btn btn-primary">Let's Connect</a>
+                    <a href="https://www.linkedin.com/in/yasmin-johari-242323257/" target="_blank" class="btn btn-secondary">LinkedIn ↗</a>
+                </div>
+            </section>
+
+            <!-- Quick Bio / Summary Box -->
+            <div class="bento-box info-box">
+                <span class="box-tag">SPECIALIZATION</span>
+                <h3>Graphics & Multimedia Software</h3>
+                <p>Focused on interactive wireframing, high-fidelity UI prototyping, mobile system engineering, and enterprise portals.</p>
+            </div>
+
+            <!-- Skills Bento Box -->
+            <section id="skills" class="bento-box skills-box">
+                <span class="box-tag">CORE TOOLKIT</span>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>UI/UX Design</h4>
+                        <p>Figma, Wireframing, UI Prototyping, User Flows, Responsive Design, Canva</p>
                     </div>
-                    <h2>i-Cadang Enterprise Mobile App</h2>
+                    <div class="skill-category">
+                        <h4>Front-End & Web</h4>
+                        <p>Flutter, Dart, HTML/CSS, JavaScript, WordPress CMS, AJAX</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Back-End & DB</h4>
+                        <p>Laravel, MySQL, SQL, PHP</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>QA & Tools</h4>
+                        <p>System Testing, UAT, Git, VS Code, Power BI</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Title Box -->
+            <div id="work" class="bento-box title-box">
+                <span class="box-tag">PORTFOLIO</span>
+                <h2>Featured Projects & Experience</h2>
+            </div>
+
+            <!-- Project Card 1: i-Cadang Mobile App -->
+            <article class="bento-box project-box span-2">
+                <div class="project-media">
+                    <img src="images/icadang.png" alt="i-Cadang Mobile Application">
+                </div>
+                <div class="project-details">
+                    <div class="tag-group">
+                        <span class="badge">Favotech System Internship</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Laravel</span>
+                    </div>
+                    <h3>i-Cadang Enterprise Mobile App</h3>
                     <p>Developed an internal mobile application end-to-end during my industrial training at Favotech System, engineering the front-end using Flutter and integrating back-end services using Laravel.</p>
                 </div>
             </article>
 
-            <!-- Card 2: WordPress Portal & Prototyping -->
-            <article class="project-card card-small offset-down">
-                <div class="card-media">
+            <!-- Project Card 2: KPK Web Portal & Prototyping -->
+            <article class="bento-box project-box">
+                <div class="project-media">
                     <img src="images/kpk-portal.png" alt="KPK Government Portal">
-                    <div class="media-badge">INTERNSHIP PROJECT</div>
                 </div>
-                <div class="card-body">
-                    <div class="card-meta">
-                        <span class="tag tag-orange">WORDPRESS</span>
-                        <span class="tag">FIGMA</span>
+                <div class="project-details">
+                    <div class="tag-group">
+                        <span class="badge">Favotech System Internship</span>
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Figma</span>
                     </div>
-                    <h2>KPK Government Portal & Web Prototyping</h2>
-                    <p>Designed and maintained web layouts, custom posts, homepage statistics, and navigation modules using WordPress. Wireframed and prototyped user interfaces in Figma for the Skuad Antidadah app and iPersonel system.</p>
+                    <h3>KPK Government Portal & Prototyping</h3>
+                    <p>Designed and maintained web layouts and navigation modules using WordPress. Wireframed and prototyped user interfaces in Figma for the Skuad Antidadah app and iPersonel system.</p>
                 </div>
             </article>
 
-            <!-- Card 3: Mobile Car Rental Service (IMAGE AVAILABLE) -->
-            <article class="project-card card-small">
-                <div class="card-media">
+            <!-- Project Card 3: Mobile Car Rental Service -->
+            <article class="bento-box project-box">
+                <div class="project-media">
                     <img src="images/car-rental.png" alt="Car Rental Service Mobile App">
-                    <div class="media-badge">UTM PROJECT</div>
                 </div>
-                <div class="card-body">
-                    <div class="card-meta">
-                        <span class="tag tag-blue">FLUTTER</span>
-                        <span class="tag tag-yellow">DART</span>
+                <div class="project-details">
+                    <div class="tag-group">
+                        <span class="badge">UTM Project</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
                     </div>
-                    <h2>Mobile App for Car Rental Service</h2>
+                    <h3>Student Car Rental Mobile App</h3>
                     <p>Created a mobile application using Flutter and Dart tailored for a car rental service company exclusively for student users, focusing on car reservations and rental management.</p>
                 </div>
             </article>
 
-            <!-- Card 4: Mobile Attendance System (NO IMAGE) -->
-            <article class="project-card card-small offset-down">
-                <div class="card-media">
-                    <div class="card-media-placeholder">GEOLOCATION APP</div>
-                    <div class="media-badge">UTM PROJECT</div>
-                </div>
-                <div class="card-body">
-                    <div class="card-meta">
-                        <span class="tag tag-yellow">GEOLOCATION</span>
-                        <span class="tag tag-blue">DART</span>
+            <!-- Project Card 4: Mobile Attendance System -->
+            <article class="bento-box project-box">
+                <div class="project-details">
+                    <div class="tag-group">
+                        <span class="badge">UTM Project</span>
+                        <span class="tag">Geolocation</span>
+                        <span class="tag">Dart</span>
                     </div>
-                    <h2>Lab Attendance & Appointment System</h2>
+                    <h3>Lab Attendance & Appointment System</h3>
                     <p>Developed a mobile application using Flutter and Dart that integrates geolocation to accurately track users' current location for reliable attendance marking and lab appointment scheduling.</p>
                 </div>
             </article>
 
-            <!-- Card 5: Web-Based Leave System -->
-            <article class="project-card card-large">
-                <div class="card-media">
-                    <div class="card-media-placeholder">WEB SYSTEM</div>
-                    <div class="media-badge">UTM PROJECT</div>
-                </div>
-                <div class="card-body">
-                    <div class="card-meta">
-                        <span class="tag tag-orange">HTML/CSS</span>
-                        <span class="tag tag-blue">MYSQL</span>
+            <!-- Project Card 5: Web-Based Leave System -->
+            <article class="bento-box project-box">
+                <div class="project-details">
+                    <div class="tag-group">
+                        <span class="badge">UTM Project</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">MySQL</span>
                     </div>
-                    <h2>Web-Based Leave Application System</h2>
+                    <h3>Web-Based Leave Management System</h3>
                     <p>Developed a web application integrated with a MySQL database to manage leave applications and approvals, utilizing HTML for front-end design to ensure efficient system operations.</p>
                 </div>
             </article>
 
-        </div>
-    </section>
+            <!-- Footer Bento Box -->
+            <footer class="bento-box footer-box span-full">
+                <div class="footer-content">
+                    <h2>Ready to collaborate on human-centered digital experiences?</h2>
+                    <a href="mailto:ysminjoe@gmail.com" class="footer-email">ysminjoe@gmail.com ↗</a>
+                </div>
+                <div class="footer-meta">
+                    <span>© Yasmin Binti Johari</span>
+                    <span>Klang, Selangor, Malaysia</span>
+                </div>
+            </footer>
 
-    <!-- Capabilities / Tech Stack Architecture -->
-    <section id="capabilities" class="stack-section">
-        <div class="section-tag">
-            <span>[ CORE_SKILLS & TOOLING ]</span>
         </div>
+    </main>
 
-        <div class="stack-container">
-            <div class="stack-box">
-                <h3>01 / UI UX DESIGN</h3>
-                <p>Figma, User Flow Architecture, Wireframing, UI Prototyping, Responsive Design, Canva.</p>
-            </div>
-            <div class="stack-box highlight-box">
-                <h3>02 / FRONT-END & WEB</h3>
-                <p>HTML, CSS, JavaScript, Flutter, Dart, WordPress CMS, AJAX.</p>
-            </div>
-            <div class="stack-box">
-                <h3>03 / BACK-END & DB</h3>
-                <p>Laravel, MySQL, SQL, PHP.</p>
-            </div>
-            <div class="stack-box">
-                <h3>04 / SOFTWARE, QA & TOOLS</h3>
-                <p>User Acceptance Testing (UAT), System Testing, Git, VS Code, Power BI.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Footer -->
-    <footer id="contact" class="footer">
-        <div class="footer-content">
-            <h2>DELIVERING RESPONSIVE & VISUALLY ENGAGING INTERFACES.</h2>
-            <a href="mailto:ysminjoe@gmail.com" class="email-btn">ysminjoe@gmail.com ↗</a>
-            <div class="footer-bottom">
-                <span>© YASMIN BINTI JOHARI. ALL RIGHTS RESERVED.</span>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
