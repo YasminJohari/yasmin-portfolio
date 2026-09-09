@@ -109,7 +109,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
