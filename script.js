@@ -1,30 +1,20 @@
-// Theme Toggle Handler
 const themeToggleBtn = document.getElementById('theme-toggle');
-const themeIcon = document.getElementById('theme-icon');
 
-// Load saved theme or system preference
+// Load saved theme or fallback to system preference
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
     document.documentElement.setAttribute('data-theme', 'dark');
-    if (themeIcon) themeIcon.textContent = '☀️';
 } else {
     document.documentElement.setAttribute('data-theme', 'light');
-    if (themeIcon) themeIcon.textContent = '🌙';
 }
 
+// Toggle between light and dark
 if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
-        let newTheme = 'light';
-        
-        if (currentTheme === 'light') {
-            newTheme = 'dark';
-            themeIcon.textContent = '☀️';
-        } else {
-            themeIcon.textContent = '🌙';
-        }
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);

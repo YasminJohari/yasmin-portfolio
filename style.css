@@ -118,11 +118,10 @@ body {
     background: var(--card-bg);
     border: 1px solid var(--border-subtle);
     color: var(--text-main);
-    padding: 6px 12px;
+    padding: 8px;
     border-radius: 99px;
     cursor: pointer;
-    font-size: 1rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease;
@@ -130,7 +129,22 @@ body {
 
 .theme-toggle-btn:hover {
     border-color: var(--accent-color);
+    color: var(--accent-color);
     transform: scale(1.05);
+}
+
+.theme-icon {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+/* Hide moon in dark mode, hide sun in light mode */
+[data-theme="dark"] #theme-icon-moon {
+    display: none;
+}
+
+[data-theme="light"] #theme-icon-sun {
+    display: none;
 }
 
 /* Main Container */
