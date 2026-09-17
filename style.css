@@ -462,41 +462,62 @@ body {
     .skills-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* --- Fixed Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .navbar {
         padding: 12px 16px;
     }
+    
     .nav-links a:not(.cta-btn) {
-        display: none; /* Hide standard links on mobile to save header space */
+        display: none; /* Hide top links to avoid navbar crowding */
     }
+
     .container {
         margin-top: 80px;
-        padding: 0 12px;
+        padding: 0 16px;
     }
+
+    /* Force grid to 1 single vertical column */
     .bento-grid {
-        grid-template-columns: 1fr;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 16px;
     }
-    .hero-box, .skills-box, .span-2, .span-full {
-        grid-column: span 1;
+
+    /* Reset ALL column spans so no element tries to take up multiple columns */
+    .bento-box, 
+    .hero-box, 
+    .skills-box, 
+    .project-box, 
+    .span-2, 
+    .span-full {
+        grid-column: span 1 !important;
+        width: 100% !important;
     }
+
     .hero-box {
         padding: 24px;
     }
+
     .bento-box {
         padding: 20px;
     }
+
+    /* Stack skill categories vertically as well */
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 16px;
     }
+
     .hero-cta-group {
         flex-direction: column;
         width: 100%;
     }
+
     .btn {
         width: 100%;
     }
+
     .project-media {
         height: 220px;
     }
