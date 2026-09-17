@@ -354,6 +354,29 @@ body {
     color: var(--text-muted);
 }
 
+/* PDF Preview & Link Styling */
+.pdf-preview-container {
+    background: #E4E4E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdf-download-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.pdf-download-link:hover {
+    color: #1D4ED8;
+    text-decoration: underline;
+}
+
 /* Footer Box */
 .footer-box {
     background: var(--text-main);
